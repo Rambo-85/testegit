@@ -1,41 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="utf-8">
-    <title>Reconhecimento de gestos</title>
-    <style>
-        body {
-            color: rgb(27, 3, 78);
-            font-family: Arial, Helvetica, sans-serif;
-            margin-top: 20px;
-            text-align: center;
-        }
-        #webcam-container {
-            width: 400px;
-            height: 400px;
-            margin: auto;
-            background-color: #ddd;
-        }
-        button {
-            padding: 10px 20px;
-            margin-top: 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        
-    </style>
-</head>
-<body>
-    <h1>IA com Teachable Machine</h1>
-    <canvas id="canvas"></canvas>
-    <div id="webcam-container"></div>
-    <button id="toggleBtn">Ligar/Apagar</button>
-
-    <!-- Bibliotecas -->
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
-
-    <script>
         const URL = "https://teachablemachine.withgoogle.com/models/opLIKGO51/";
 
         let model, webcam,isOn = false;
@@ -95,7 +57,4 @@
             } else {
                 document.body.style.backgroundColor = "#ffffff"; //branco
             }
-        }            
-    </script>
-</body>
-</html>
+        } 
